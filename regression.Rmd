@@ -24,7 +24,6 @@ preferences$average <- rowSums((preferences[,3:45 ])/43)
 # train <- person[]
 # test <- person[]
 
-# 
 # model1 <- lm(data = average, formula = average ~ psyudonym + sex + academic_level + major)
 # summary(model1)
 # plot(model1)
