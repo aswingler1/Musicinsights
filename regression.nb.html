@@ -1748,138 +1748,37 @@ summary {
 </div>
 
 
-<!-- rnb-text-begin -->
 <p>Import the stuff from the other file.</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaW5jbHVkZShcImtuaXRyXCIpXG5pbmNsdWRlKFwiY2FyZXRcIilcbnB1cmwoXCJNdXNpY2luc2lnaHRzMi5SbWRcIiwgb3V0cHV0ID0gXCJwYXJ0MS5yXCIpXG5gYGAifQ== -->
-<pre class="r"><code>include(&quot;knitr&quot;)
+<pre class="{r}"><code>include(&quot;knitr&quot;)
 include(&quot;caret&quot;)
-purl(&quot;Musicinsights2.Rmd&quot;, output = &quot;part1.r&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5cbnByb2Nlc3NpbmcgZmlsZTogTXVzaWNpbnNpZ2h0czIuUm1kXG4ifQ== -->
-<pre><code>
-
-processing file: Musicinsights2.Rmd</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG4gIHwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8ICAgMCVcbiAgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gIHwuLi4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwgICA1JVxuICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgfC4uLi4uLiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfCAgMTAlXG4gIHwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICB8Li4uLi4uLi4uLiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8ICAxNSVcbiAgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gIHwuLi4uLi4uLi4uLi4uICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwgIDIwJVxuICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgfC4uLi4uLi4uLi4uLi4uLi4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfCAgMjUlXG4gIHwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICB8Li4uLi4uLi4uLi4uLi4uLi4uLi4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8ICAzMCVcbiAgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gIHwuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwgIDM1JVxuICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgfC4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfCAgNDAlXG4gIHwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICB8Li4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8ICA0NSVcbiAgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gIHwuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwgIDUwJVxuICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgfC4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfCAgNTUlXG4gIHwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICB8Li4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uICAgICAgICAgICAgICAgICAgICAgICAgICB8ICA2MCVcbiAgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gIHwuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4gICAgICAgICAgICAgICAgICAgICAgIHwgIDY1JVxuICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgfC4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4gICAgICAgICAgICAgICAgICAgfCAgNzAlXG4gIHwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICB8Li4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLiAgICAgICAgICAgICAgICB8ICA3NSVcbiAgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gIHwuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uICAgICAgICAgICAgIHwgIDgwJVxuICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgfC4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4gICAgICAgICAgfCAgODUlXG4gIHwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICB8Li4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLiAgICAgICB8ICA5MCVcbiAgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gIHwuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLiAgIHwgIDk1JVxuICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgfC4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4ufCAxMDAlXG4ifQ== -->
-<pre><code>
-  |                                                                       
-  |                                                                 |   0%
-  |                                                                       
-  |...                                                              |   5%
-  |                                                                       
-  |......                                                           |  10%
-  |                                                                       
-  |..........                                                       |  15%
-  |                                                                       
-  |.............                                                    |  20%
-  |                                                                       
-  |................                                                 |  25%
-  |                                                                       
-  |....................                                             |  30%
-  |                                                                       
-  |.......................                                          |  35%
-  |                                                                       
-  |..........................                                       |  40%
-  |                                                                       
-  |.............................                                    |  45%
-  |                                                                       
-  |................................                                 |  50%
-  |                                                                       
-  |....................................                             |  55%
-  |                                                                       
-  |.......................................                          |  60%
-  |                                                                       
-  |..........................................                       |  65%
-  |                                                                       
-  |..............................................                   |  70%
-  |                                                                       
-  |.................................................                |  75%
-  |                                                                       
-  |....................................................             |  80%
-  |                                                                       
-  |.......................................................          |  85%
-  |                                                                       
-  |..........................................................       |  90%
-  |                                                                       
-  |..............................................................   |  95%
-  |                                                                       
-  |.................................................................| 100%</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoib3V0cHV0IGZpbGU6IHBhcnQxLnJcbiJ9 -->
-<pre><code>output file: part1.r</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwicGFydDEuclwiXG4ifQ== -->
-<pre><code>[1] &quot;part1.r&quot;</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc291cmNlKFwicGFydDEuclwiKVxuYGBgIn0= -->
-<pre class="r"><code>source(&quot;part1.r&quot;)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiUGFyc2VkIHdpdGggY29sdW1uIHNwZWNpZmljYXRpb246XG5jb2xzKFxuICBUaW1lc3RhbXAgPSBcdTAwMWJbMzFtY29sX2NoYXJhY3RlcigpXHUwMDFiWzM5bSxcbiAgYEZpcnN0LCB3ZSBhcmUgZ29pbmcgdG8gY3JlYXRlIGEgcHNldWRvbnltIGZvciB5b3UgdG8ga2VlcCB0aGlzIHN1cnZleSBhbm9ueW1vdXMgKG1vcmUgb3IgbGVzcykuIFdoaWNoIHBzZXVkb255bSBnZW5lcmF0b3Igd291bGQgeW91IHByZWZlcj9gID0gXHUwMDFiWzMxbWNvbF9jaGFyYWN0ZXIoKVx1MDAxYlszOW0sXG4gIGBXaGF0IGlzIHlvdXIgcHNldWRvbnltP2AgPSBcdTAwMWJbMzFtY29sX2NoYXJhY3RlcigpXHUwMDFiWzM5bSxcbiAgU2V4ID0gXHUwMDFiWzMxbWNvbF9jaGFyYWN0ZXIoKVx1MDAxYlszOW0sXG4gIE1ham9yID0gXHUwMDFiWzMxbWNvbF9jaGFyYWN0ZXIoKVx1MDAxYlszOW0sXG4gIGBBY2FkZW1pYyBZZWFyYCA9IFx1MDAxYlszMW1jb2xfY2hhcmFjdGVyKClcdTAwMWJbMzltLFxuICBgWWVhciB5b3Ugd2VyZSBib3JuIChZWVlZKWAgPSBcdTAwMWJbMzJtY29sX2RvdWJsZSgpXHUwMDFiWzM5bSxcbiAgYFdoaWNoIG11c2ljYWwgaW5zdHJ1bWVudHMvdGFsZW50cyBkbyB5b3UgcGxheT8gKFNlbGVjdCBhbGwgdGhhdCBhcHBseSlgID0gXHUwMDFiWzMxbWNvbF9jaGFyYWN0ZXIoKVx1MDAxYlszOW0sXG4gIEFydGlzdCA9IFx1MDAxYlszMW1jb2xfY2hhcmFjdGVyKClcdTAwMWJbMzltLFxuICBTb25nID0gXHUwMDFiWzMxbWNvbF9jaGFyYWN0ZXIoKVx1MDAxYlszOW0sXG4gIGBMaW5rIHRvIHNvbmcgKG9uIFlvdXR1YmUgb3IgVmltZW8pYCA9IFx1MDAxYlszMW1jb2xfY2hhcmFjdGVyKClcdTAwMWJbMzltXG4pXG5QYXJzZWQgd2l0aCBjb2x1bW4gc3BlY2lmaWNhdGlvbjpcbmNvbHMoXG4gIC5kZWZhdWx0ID0gY29sX2RvdWJsZSgpLFxuICBUaW1lc3RhbXAgPSBcdTAwMWJbMzFtY29sX2NoYXJhY3RlcigpXHUwMDFiWzM5bSxcbiAgYFdoYXQgd2FzIHlvdXIgcHNldWRvbnltP2AgPSBcdTAwMWJbMzFtY29sX2NoYXJhY3RlcigpXHUwMDFiWzM5bVxuKVxuU2VlIHNwZWMoLi4uKSBmb3IgZnVsbCBjb2x1bW4gc3BlY2lmaWNhdGlvbnMuXG4ifQ== -->
-<pre><code>Parsed with column specification:
-cols(
-  Timestamp = [31mcol_character()[39m,
-  `First, we are going to create a pseudonym for you to keep this survey anonymous (more or less). Which pseudonym generator would you prefer?` = [31mcol_character()[39m,
-  `What is your pseudonym?` = [31mcol_character()[39m,
-  Sex = [31mcol_character()[39m,
-  Major = [31mcol_character()[39m,
-  `Academic Year` = [31mcol_character()[39m,
-  `Year you were born (YYYY)` = [32mcol_double()[39m,
-  `Which musical instruments/talents do you play? (Select all that apply)` = [31mcol_character()[39m,
-  Artist = [31mcol_character()[39m,
-  Song = [31mcol_character()[39m,
-  `Link to song (on Youtube or Vimeo)` = [31mcol_character()[39m
-)
-Parsed with column specification:
-cols(
-  .default = col_double(),
-  Timestamp = [31mcol_character()[39m,
-  `What was your pseudonym?` = [31mcol_character()[39m
-)
-See spec(...) for full column specifications.</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibmNvbCI6MywibnJvdyI6NDJ9LCJyZGYiOiJINHNJQUFBQUFBQUFBNlZXVzNNVE54UmVDT0VTYmlIUVRvRU9uREp0MHpLVGxCWWVlS3h2aVVuc09PTTFDYlRUNmNpN3NsZFlsanlTTnNaNTZxL3N6eUg5NUt5VzRDbERtVHJqclBmbzZGeSs4NTBqZGV1dm5xNjhXb21pYUNsYXVuZ3VXbHJHejJqNVpXOXI0M2tVWFRpUGwzUFJoZWlLZjc2RjB1MjVaaFN0NHZ1NFdGaHRhWk5TUzF1cXFDR1gzQmJ5cS92NVpNS2RwVU5tQ3RIS0liZU8ybXdva3FEVWtKS2IwNTJGNkhyUHNJUlQ3SXlZbE1ZdXRvU2tlQ3VvVkZtYWVsUFYzSXg0SWJ5MWI0VEN4cTVJaHp3eFdBN2FMeUJ0MkVTclZLUTZPRzR4YTdtaUxXYkdaU3dNSm1PZHE5UytkeVFsb3hZTWE2a0s0ZVVxVSttWnJCYmZiNGZvRGpoM0dVc3lyb2JGMHJWZXhyV1owVDR6YmhiY3prSFpaaWJsd2NPMUdCWm4xT1BqaVF6cFhlMktvd1drYnJTRnRVSXJPclZhU0MvRlFuSUFFVktZdzcwQTV3cmdYS2Vta0xMTXRKM0xQamVJRFpVTXlOMm82OFJwczFEWVd6YlQyaUdXZ1dFcUVRQTJoQmlQc1pEUjY3elBnaWdSenVTVzVIdWpWL2M4WHo3STdXWlZXd3RlbUprOVFreGx5dlVkYXJFUmwwQ2pSS2J3RGN4SHBWdkorZkdNZHJRTk95L1BmYnd2eVZwWFN5blUrcitRbzZuN0tNWUMxdk9FUDhCNmRkL29TY2FkTHgxTFJlbnBXaTFqeWtINURKRlc0NUZRYWtaVnc1V2JhbDBHSDJ6VVJGbjlKVlJpb2FIV25qMGhoRGlsUGUyb29YUSt6SXFWKzVVajVwang5YVlHRzBwT1RXWUJrVXA1V2tMcFNhMWxhbEZ5WUZtSUgvYVIvbWpqNStlL1VKenhkVXVkM0ZGblFFMUEyUllsdkp0OUk1aWlOMW9CSVQxVk5FYVhNQVJEUDVGRjRuMFFtbHllOEJIRm5BZDA3MVM3bmRwdXM5TGU3M1gyYUs5RHpVcXJVNndCQkZEQ0UxY0txakcxRHFoUlVxVEFIRldtTE9Cd3I4NzZXZ2lxY3NpRklrYTFUSTk0aGt3S2pTL3FUQWtBWFdNY29WQm5na1JmVG9yRkwrc2NPUGptbGFpUWN6T3FhMTJPaHZ0MXpsTGE1VXJ4ZEdacEY3ak1NZHpYMnBUVzlWZ29OTXFXUUhSUGFVOE1NeGNZLzAzZGNEYjJXNWpuWG9WODBZZWM5QUF3TUt2Vlp5dmViS1MrRUJ3ZFJIVTBkaWpUTmxlUVNXcnhveG05VUVBK0ZYM1UrWWN1SDR1M1A0WmdtOExvV1Q0U0ZMTXBVNXJpRFZiYStIcUhDV0FBSU9xYVh1c2NEWDNFNTRYZTA5TlNSMmVlb1RWbU16cms2OENqaldGRmxTRVRZUWc5M0dXSysvS0JCb2VvRmtnRHBuQVMxbHMxSVJPZ09hWjk3Z3lZK0lKU3JSd2hKTlRRRVNySlNnWSthdkdVZnVNNEVzQkVoRE9iZjcxaFR3dHNyWWN4Y2crRHdHWmpMcVdtanZKVUVXcUl6a1ZCd2dScU15ZnNqR1g1WEtGZXNtaXR2VVgxVHFlTnlqcFBIVzZPd3lnYjYyUE1pTDVrS2Y1Q1E2MTI1SHlxOWd3SFJMa0pEaDUwMGVNNjg2eVpjb0ZSTWhBMjQ1YVltZkRoVUJSYTMzV0JWbDlQQVlGellHT2NtNG5CYUtDYVRwaUhhb2ZiUE9EMGZWY2tJNnBZSjVIMkh2ZGV0N1ZQekduYVJoRHpVcFY4dmhVTFJnMkpBd21VYkhKV1J2WWtGbStkMXJURGtoR1RpQWhIendFbXU3RytheG9LdEFIWjJrRDA5NHJzNStNL1FvL0dDbTJYaVltbGhwZzM1R0dKMm5xY0Q5NWdSK3dRbHNMZ3lOQkdLV1lMb3RwVnZ2NVZqZ1RMZHUreE1hY1g0d25EMFlobUUyZE9td2UrcmFvU3dhSGQwR292MWVqVXdPa1VDTjA2MTVvWkRLbTIyYVI0Z2dOL3pBTHgxbnBhWTU0aWFYU0FUbktaaDhINkZhNEdnd0VRcWZ0RnYzVUxWR00ySkhJWDYwZmdaNXhvNXp6VzNpdU84OUx4M1FOaFhJNytpcmtjbk01M090QWlLYysyMjRkb3ltTi92dVFwVHVBbWpvMlpaNDhmejc5K0c4MC9uM3crK3NUN3g1NTNQdFB1b3Z5Lyt2bS9jWHpzR1gyZS9zSUY4d29temFZQ3RTeGVydU43L2kvOE96azUrWHRCY1RsQlgzaWwxVFBDbFJRbjR5WnVKR08rcUI1c2V2V2w0R3hpZVk1aE5Tc3ZmMmd4WWQyZm1OSGhzbmJSZ050NGk2SjNDeVl2NllrVGZwaEg1LzJOZUhraGxuTm1RWEF6Vno2SWRDTUJHMGNiejN5ODgrWFR6L1hpOStNenY1ZE9YVjQ0S1V3dGg2QndtY1JvQ2JsSkhNbmxkZENQYXAvckpxYVFDZ05qQlZLNzZiUmpRVzhGZDlrZ21lY1d2ZnNINVBjTXBRZ01BQUE9In0= -->
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":["pseudonym"],"name":[1],"type":["chr"],"align":["left"]},{"label":["artist_song"],"name":[2],"type":["chr"],"align":["left"]},{"label":["rating"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"Lord Los Angeles","2":"40 crew Not Enough","3":"10"},{"1":"Puppets War","2":"Avatar The Eagle Has Landed","3":"10"},{"1":"West Magic","2":"Ben Folds Still","3":"10"},{"1":"Eller Angel","2":"blink-182 She's Out Of Her Mind","3":"10"},{"1":"Trace Stripes","2":"brian jonestown massacre / sarabeth tucek Seer","3":"10"},{"1":"Lil SF","2":"BROCKHAMPTON NO HALO","3":"9"},{"1":"Baddest Burke","2":"Brother Ali Can't Take That Away","3":"10"},{"1":"Prince Ridgecrest","2":"Daboii Beat in a Chokehold","3":"9"},{"1":"Ice Escondido","2":"Daniel Caesar Open Up","3":"10"},{"1":"Lassen Farm","2":"De La Soul Patty Dooke","3":"10"},{"1":"East Sounds","2":"Dead Kennedys Kill The Poor","3":"10"},{"1":"Balla Lincoln","2":"Dominic Fike 3 Nights","3":"10"},{"1":"Band War","2":"Dream Theater A Change of Seasons","3":"5"},{"1":"Band War","2":"Dream Theater A Change of Seasons","3":"10"},{"1":"Baddest Veethacheng","2":"Ed Sheeran Dive","3":"10"},{"1":"Theory Party","2":"General Levy Incredible (Remix)","3":"10"},{"1":"West Garden","2":"Hiroyuki Sawano S-ave","3":"9"},{"1":"Sandy Temple","2":"Jai Paul Do You Love Her Now","3":"10"},{"1":"River Angel","2":"Johnny Cash We'll Meet Again","3":"10"},{"1":"Mission Theory","2":"Kane Brown What's Mine is Yours","3":"9"},{"1":"Silence","2":"Kim Petras I dont want it at all","3":"9"},{"1":"Magic Stripes","2":"Led Zeppelin Hey Hey What Can I Do","3":"10"},{"1":"Lil' Hills","2":"Marshmello One Thing Right","3":"10"},{"1":"Mulberry Lost","2":"Matisyahu One Day","3":"10"},{"1":"Doctor Angeles","2":"MF DOOM Potholderz","3":"10"},{"1":"shooter francisco","2":"mozzy bladadah","3":"10"},{"1":"Smooth Yuba","2":"Oliver Tree Hurt","3":"10"},{"1":"citrus lost","2":"Radiohead weird fishes arpeggi","3":"10"},{"1":"Nord Temple","2":"Rainbow Kitten Surprise Cocaine Jesus","3":"10"},{"1":"Boss Marysville","2":"Rick Astley Never Going to Give You Up","3":"5"},{"1":"DJ Lakeland","2":"Sia Elastic Heart","3":"10"},{"1":"Shooter Bank","2":"Sixtoo Jackals and Vipers in Envy of Man [Album]","3":"10"},{"1":"Sleezy Jose","2":"Snakehips Either Way","3":"10"},{"1":"Nord War","2":"Sufjan Stevens Should Have Known Better","3":"10"},{"1":"Rollin' Ridgecrest","2":"Tame Impala Patience","3":"10"},{"1":"Hobart Temple","2":"The Black Keys Unknown Brother","3":"10"},{"1":"Angel Angel","2":"The Byrds Mr. Spaceman","3":"2"},{"1":"Prophet Paradise","2":"Tool Fear Inoculum","3":"10"},{"1":"Chantel Farm","2":"Traffic Dear Mr. Fantasy","3":"10"},{"1":"Skinny Brentwood","2":"Travis Scott Astrothunder","3":"10"},{"1":"Prophet City","2":"Virtual Self Angel Voices","3":"10"},{"1":"Lil","2":"Wheezer Buddy Holly","3":"10"}],"options":{"columns":{"min":{},"max":[10],"total":[3]},"rows":{"min":[10],"max":[10],"total":[42]},"pages":{}}}
-  </script>
-</div>
-<!-- rnb-frame-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
+purl(&quot;Musicinsights2.Rmd&quot;, output = &quot;part1.r&quot;)
+source(&quot;part1.r&quot;)
+</code></pre>
 <p>Adds up each persons rating and takes the average and adds it to the preferences tibble.</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJlZmVyZW5jZXMkYXZlcmFnZSA8LSByb3dTdW1zKChwcmVmZXJlbmNlc1ssMzo0NSBdKS80MylcblxuIyB0cmFpbiA8LSBwZXJzb25bXVxuIyB0ZXN0IDwtIHBlcnNvbltdXG5cbiMgXG4jIG1vZGVsMSA8LSBsbShkYXRhID0gYXZlcmFnZSwgZm9ybXVsYSA9IGF2ZXJhZ2UgfiBwc3l1ZG9ueW0gKyBzZXggKyBhY2FkZW1pY19sZXZlbCArIG1ham9yKVxuIyBzdW1tYXJ5KG1vZGVsMSlcbiMgcGxvdChtb2RlbDEpXG5cbnNldC5zZWVkKDEyMylcbnRyYWluaW5nLnNhbXBsZXMgPC0gcGVyc29uJGFjYWRlbWljX2xldmVsICU+JSBjcmVhdGVEYXRhUGFydGl0aW9uKHA9Ljc1LCBsaXN0PUZBTFNFKVxuYGBgIn0= -->
-<pre class="r"><code>preferences$average &lt;- rowSums((preferences[,3:45 ])/43)
+<pre class="{r}"><code>preferences$average &lt;- rowSums((preferences[,3:45 ])/43)
 
 # train &lt;- person[]
 # test &lt;- person[]
 
-# 
 # model1 &lt;- lm(data = average, formula = average ~ psyudonym + sex + academic_level + major)
 # summary(model1)
 # plot(model1)
 
 set.seed(123)
-training.samples &lt;- person$academic_level %&gt;% createDataPartition(p=.75, list=FALSE)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiU29tZSBjbGFzc2VzIGhhdmUgYSBzaW5nbGUgcmVjb3JkICggU29waG9tb3JlICkgYW5kIHRoZXNlIHdpbGwgYmUgc2VsZWN0ZWQgZm9yIHRoZSBzYW1wbGVcbiJ9 -->
-<pre><code>Some classes have a single record ( Sophomore ) and these will be selected for the sample</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudHJhaW4uZGF0YSA9IHBlcnNvbltpbmRleCxdXG50ZXN0LmRhdGEgPSBwZXJzb25bLWluZGV4LF1cblxubW9kZWwgPC0gbG0oZGF0YSA9IHBlcnNvbiwgYXZlcmFnZSB+IGJpcnRoX3llYXIgKyBzZXggKyBnZW5lcmF0b3IgKyBhY2VkZW1pY19sZXZlbClcbmBgYCJ9 -->
-<pre class="r"><code>train.data = person[index,]
+training.samples &lt;- person$academic_level %&gt;% createDataPartition(p=.75, list=FALSE)
+train.data = person[index,]
 test.data = person[-index,]
 
-model &lt;- lm(data = person, average ~ birth_year + sex + generator + acedemic_level)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3IgaW4gZXZhbChwcmVkdmFycywgZGF0YSwgZW52KSA6IG9iamVjdCAnYXZlcmFnZScgbm90IGZvdW5kXG4ifQ== -->
-<pre><code>Error in eval(predvars, data, env) : object 'average' not found</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<!-- rnb-text-end -->
+model &lt;- lm(data = person, average ~ birth_year + sex + generator + acedemic_level)
+
+summary(train_m)
+plot(train_m) 
+
+# predictions &lt;- model %&gt;% predict(test.data)
+# MAE(prediction, test$average)
+# ggplot(test, aes(prediction, average)) + geom_point()
+
+#need more work</code></pre>
 
 <div id="rmd-source-code">LS0tCnRpdGxlOiAiRXhlcmNpc2UgOCIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKSW1wb3J0IHRoZSBzdHVmZiBmcm9tIHRoZSBvdGhlciBmaWxlLgpgYGB7cn0KaW5jbHVkZSgia25pdHIiKQppbmNsdWRlKCJjYXJldCIpCnB1cmwoIk11c2ljaW5zaWdodHMyLlJtZCIsIG91dHB1dCA9ICJwYXJ0MS5yIikKc291cmNlKCJwYXJ0MS5yIikKCmBgYAoKCgoKCgpBZGRzIHVwIGVhY2ggcGVyc29ucyByYXRpbmcgYW5kIHRha2VzIHRoZSBhdmVyYWdlIGFuZCBhZGRzIGl0IHRvIHRoZSBwcmVmZXJlbmNlcyB0aWJibGUuCmBgYHtyfQpwcmVmZXJlbmNlcyRhdmVyYWdlIDwtIHJvd1N1bXMoKHByZWZlcmVuY2VzWywzOjQ1IF0pLzQzKQoKIyB0cmFpbiA8LSBwZXJzb25bXQojIHRlc3QgPC0gcGVyc29uW10KCiMgbW9kZWwxIDwtIGxtKGRhdGEgPSBhdmVyYWdlLCBmb3JtdWxhID0gYXZlcmFnZSB+IHBzeXVkb255bSArIHNleCArIGFjYWRlbWljX2xldmVsICsgbWFqb3IpCiMgc3VtbWFyeShtb2RlbDEpCiMgcGxvdChtb2RlbDEpCgpzZXQuc2VlZCgxMjMpCnRyYWluaW5nLnNhbXBsZXMgPC0gcGVyc29uJGFjYWRlbWljX2xldmVsICU+JSBjcmVhdGVEYXRhUGFydGl0aW9uKHA9Ljc1LCBsaXN0PUZBTFNFKQp0cmFpbi5kYXRhID0gcGVyc29uW2luZGV4LF0KdGVzdC5kYXRhID0gcGVyc29uWy1pbmRleCxdCgptb2RlbCA8LSBsbShkYXRhID0gcGVyc29uLCBhdmVyYWdlIH4gYmlydGhfeWVhciArIHNleCArIGdlbmVyYXRvciArIGFjZWRlbWljX2xldmVsKQoKc3VtbWFyeSh0cmFpbl9tKQpwbG90KHRyYWluX20pIAoKIyBwcmVkaWN0aW9ucyA8LSBtb2RlbCAlPiUgcHJlZGljdCh0ZXN0LmRhdGEpCiMgTUFFKHByZWRpY3Rpb24sIHRlc3QkYXZlcmFnZSkKIyBnZ3Bsb3QodGVzdCwgYWVzKHByZWRpY3Rpb24sIGF2ZXJhZ2UpKSArIGdlb21fcG9pbnQoKQoKI25lZWQgbW9yZSB3b3JrCmBgYAoKCgoKCgoKCgoKCgoKCgoKCgoKCgo=</div>
 
@@ -1928,7 +1827,7 @@ $(document).ready(function () {
 <!-- code folding -->
 <script>
 $(document).ready(function () {
-  window.initializeSourceEmbed("regression.Rmd");
+  window.initializeSourceEmbed("regression.html");
   window.initializeCodeFolding("show" === "show");
 });
 </script>

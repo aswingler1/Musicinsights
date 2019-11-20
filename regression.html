@@ -1,0 +1,67 @@
+---
+title: "Exercise 8"
+output: html_notebook
+---
+
+Import the stuff from the other file.
+```{r}
+include("knitr")
+include("caret")
+purl("Musicinsights2.Rmd", output = "part1.r")
+source("part1.r")
+
+```
+
+
+
+
+
+
+Adds up each persons rating and takes the average and adds it to the preferences tibble.
+```{r}
+preferences$average <- rowSums((preferences[,3:45 ])/43)
+
+# train <- person[]
+# test <- person[]
+
+# model1 <- lm(data = average, formula = average ~ psyudonym + sex + academic_level + major)
+# summary(model1)
+# plot(model1)
+
+set.seed(123)
+training.samples <- person$academic_level %>% createDataPartition(p=.75, list=FALSE)
+train.data = person[index,]
+test.data = person[-index,]
+
+model <- lm(data = person, average ~ birth_year + sex + generator + acedemic_level)
+
+summary(train_m)
+plot(train_m) 
+
+# predictions <- model %>% predict(test.data)
+# MAE(prediction, test$average)
+# ggplot(test, aes(prediction, average)) + geom_point()
+
+#need more work
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
